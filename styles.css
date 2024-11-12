@@ -1,0 +1,76 @@
+ body {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     margin: 0;
+     background: white;
+     font-family: sans-serif;
+ }
+
+ .container {
+     text-align: center;
+     width: 100%;
+     height: 100%;
+ }
+
+ .display {
+     font-size: 8rem;
+     font-weight: 300;
+     letter-spacing: 2px;
+     margin: 2rem 0;
+     min-width: 400px;
+     color: black;
+ }
+
+ .buttons {
+     margin-top: 2rem;
+ }
+
+ button {
+     font-size: 1rem;
+     margin: 0 0.5rem;
+     padding: 8px 16px;
+     background: white;
+     border: 1px solid black;
+     color: black;
+     cursor: pointer;
+     font-family: inherit;
+ }
+
+ button:hover {
+     background: black;
+     color: white;
+ }
+
+ .mode-switch {
+     margin-bottom: 2rem;
+ }
+
+ .controls {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 20px;
+ }
+
+ .font-select select {
+    font-size: 1rem;
+        margin: 0 0.5rem;
+        padding: 8px 16px;
+        background: white;
+        border: 1px solid black;
+        color: black;
+        cursor: pointer;
+        font-family: inherit;
+ }
+
+
+ .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+ 
+

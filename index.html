@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClickClack</title>
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Monoton&family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <span class="flex-row">
+        <div class="mode-switch">
+          <button onclick="toggleMode()">Switch to Timer</button>
+        </div>
+        <div class="font-select">
+          <select onchange="changeFont(this.value)">
+            <option value="'sans-serif'">sans-serif</option>
+            <option value="'Black Ops One'">Black Ops One</option>
+            <option value="'Tiny5'">Tiny5</option>
+            <option value="'Monoton'">Monoton</option>
+          </select>
+        </div>
+      </span>
+      <div id="display" class="display">00:00:00::00</div>
+      <div class="buttons" id="timerButtons" style="display: none">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+      </div>
+    </div>
+  </body>
+</html>
